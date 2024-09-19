@@ -28,14 +28,15 @@ class GUM{
 }
 
 public class ConversionOfAdjMatrixToAdjList {
-    private static ArrayList<ArrayList<Integer>> conAmToAL(int[][] adjmat,int vertex){
-        int len=adjmat.length;
+    private static ArrayList<ArrayList<Integer>> conAmToAL(int[][] adjmat){
+        int rows=adjmat.length;
+        int columns = adjmat[0].length;
         ArrayList<ArrayList<Integer>> al = new ArrayList<>();
         for(int i=0;i<vertex;i++){
             al.add(new ArrayList<>());
         }
-        for(int i=0;i<vertex;i++){
-            for(int j=0;j<vertex;j++){
+        for(int i=0;i<rows;i++){
+            for(int j=0;j<columns;j++){
                 if(adjmat[i][j]==1) {
                     al.get(i).add(j);
                 }
