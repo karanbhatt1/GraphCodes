@@ -54,7 +54,7 @@ class Solution {
 
         PriorityQueue<Pair> mh = new PriorityQueue<>();
         mh.add(new Pair(src,distance[src]));
-
+// dijkastra algorithm.
         while(!mh.isEmpty()){
             Pair srcw   = mh.poll();
             int u     = srcw.node;
