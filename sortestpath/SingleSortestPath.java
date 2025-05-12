@@ -5,8 +5,8 @@ import java.util.*;
 public class SingleSortestPath {
     /**
      * BFS,DFS are also single source path algorithm .
-     * Modification of BFS is dijkastra which uses priorityqueue.
-     * DIJKSTRA --> IT IS ALGORITHM FOR UNDIRECTED OR DIRECTED CONNECTED AND POSTIVIE WEIGHT GRAPH.
+     * Modification of BFS is Dijkstra which uses priority queue.
+     * DIJKSTRA --> IT IS ALGORITHM FOR UNDIRECTED OR DIRECTED CONNECTED AND POSITIVE WEIGHT GRAPH.
      * IT CAN NOT FIND THE PATH ON NEGATIVE WEIGHT EDGE AND DISCONNECTED COMPONENT.
      *>> WE HAVE SOURCE AND DISTANCE ARRAY TO TRACK THE SHORTEST DISTANCE.
      */
